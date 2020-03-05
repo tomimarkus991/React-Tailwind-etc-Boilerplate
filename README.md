@@ -9,3 +9,7 @@
 6. ### [Prettier](https://prettier.io/)
 7. ### [PostCSS](https://postcss.org/)
 8. ### [PurgeCSS](https://purgecss.com/)
+
+## Guide
+  ###### npm i
+  ###### yarn start
