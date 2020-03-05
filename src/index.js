@@ -1,1 +1,1 @@
-import Test from "./app/Test";
+import Test from './app/Test';
