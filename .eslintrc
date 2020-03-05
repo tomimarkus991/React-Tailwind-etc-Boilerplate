@@ -1,11 +1,23 @@
 {
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
   "extends": [
     "plugin:prettier/recommended",
     "plugin:react/recommended"
   ],
   "plugins": [
-    "prettier",
-    "react"
+    "prettier/babel",
+    "prettier/react",
+    "prettier"
   ],
   "rules": {
     "prettier/prettier": "error"
