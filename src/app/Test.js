@@ -1,22 +1,41 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import './style/styles.css';
+import './style/tailwind.css';
 
 const Test = () => {
-  return <div className="bg-white mx-auto max-w-sm shadow-lg rounded-lg overflow-hidden">
-    <div className="sm:flex sm:items-center px-6 py-4">
-      <img className="block h-16 sm:h-24 rounded-full mx-auto mb-4 sm:mb-0 sm:mr-4 sm:ml-0" src="https://avatars2.githubusercontent.com/u/4323180?s=400&u=4962a4441fae9fba5f0f86456c6c506a21ffca4f&v=4" alt="" />
-      <div className="text-center sm:text-left sm:flex-grow">
-        <div className="mb-4">
-          <p className="text-xl leading-tight">Adam Wathan</p>
-          <p className="text-sm leading-tight text-grey-dark">Developer at NothingWorks Inc.</p>
-        </div>
-        <div>
-          <button className="text-xs font-semibold rounded-full px-4 py-1 leading-normal bg-white border border-purple text-purple hover:bg-purple hover:text-white">Message</button>
-        </div>
+  return (
+    <div className="max-w-sm mx-auto flex p-6 bg-gray-100 rounded-lg shadow-2xl">
+      <div className="ml-20 pt-10">
+        <h4 className="text-xl text-gray-800 underline">Technologies I used</h4>
+        <ui className="text-gray-700 list-decimal">
+          <li className="bg-gray-300 hover:bg-blue-500 hover:text-white hover:rounded">
+            <a className="pl-1 px-px pr-40" href="https://reactjs.org/">React</a>
+          </li>
+          <li className="bg-white hover:bg-teal-500 hover:text-white hover:rounded">
+            <a className="pl-1 px-px pr-32" href="https://tailwindcss.com/">Tailwind</a>
+          </li>
+          <li className="bg-gray-300 hover:bg-blue-500 hover:text-white hover:rounded">
+            <a className="pl-1 px-px pr-32" href="https://webpack.js.org/">Webpack</a>
+          </li>
+          <li className="bg-white hover:bg-teal-500 hover:text-white hover:rounded">
+            <a className="pl-1 px-px pr-32" href="https://babeljs.io/">Babel</a>
+          </li>
+          <li className="bg-gray-300 hover:bg-blue-500 hover:text-white hover:rounded">
+            <a className="pl-1 px-px pr-32" href="https://eslint.org/">ESLint</a>
+          </li>
+          <li className="bg-white hover:bg-teal-500 hover:text-white hover:rounded">
+            <a className="pl-1 px-px pr-32" href="https://prettier.io/">Prettier</a>
+          </li>
+          <li className="bg-gray-300 hover:bg-blue-500 hover:text-white hover:rounded">
+            <a className="pl-1 px-px pr-32" href="https://postcss.org/">PostCSS</a>
+          </li>
+          <li className="bg-white hover:bg-teal-500 hover:text-white hover:rounded">
+            <a className="pl-1 px-px pr-32" href="https://purgecss.com/">PurgeCSS</a>
+          </li>
+        </ui>
       </div>
     </div>
-  </div>;
+  )
 };
 
 ReactDOM.render(<Test />, document.getElementById("index"));

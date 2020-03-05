@@ -22,8 +22,8 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "./app/style/styles.css",
-      chunkFilename: "./app/style/styles.css"
+      filename: "./app/style/tailwind.css",
+      chunkFilename: "./app/style/tailwind.css"
     }),
     new HtmlWebPackPlugin({
       template: "./src/index.html",
